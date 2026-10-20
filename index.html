@@ -1,69 +1,93 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Toto's Taqueria Food Truck en San José, California. Tacos, quesabirrias, burritos y taquizas para eventos.">
-<title>Toto's Taqueria | Food Truck San José</title>
+<title>Toto's Taqueria | San José</title>
+<meta name="description" content="Tacos, burritos y quesabirrias en San José, California.">
 <style>
-:root{--orange:#ff572e;--yellow:#ffd447;--black:#151515;--cream:#fff8ed;--gray:#292929}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--black);background:var(--cream);line-height:1.55}
-header{background:var(--black);color:white;padding:17px 6vw;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;border-bottom:5px solid var(--orange)}
-.brand{font-weight:1000;font-size:1.45rem;text-transform:uppercase;letter-spacing:1px}.brand b{color:var(--yellow)}
-nav a{color:white;text-decoration:none;font-weight:800;margin-left:17px}
-.hero{background:linear-gradient(105deg,rgba(10,10,10,.93),rgba(15,15,15,.55)),url('https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=1800&q=85') center/cover,#292929;color:white;padding:78px 6vw 70px;border-bottom:8px solid var(--yellow)}
-.kicker{color:var(--yellow);font-weight:900;letter-spacing:3px;text-transform:uppercase}.hero h1{font-size:clamp(2.8rem,7vw,5.4rem);line-height:.98;max-width:850px;margin:14px 0 20px;text-transform:uppercase;font-weight:1000}.hero h1 em{font-style:normal;color:var(--orange)}.hero p{font-size:1.15rem;max-width:650px}
-.btn{display:inline-block;padding:14px 20px;background:var(--orange);color:white;text-decoration:none;font-weight:900;text-transform:uppercase;border-radius:5px;margin:10px 10px 0 0;box-shadow:4px 4px 0 var(--yellow)}.btn.alt{background:var(--yellow);color:#151515}
-section{padding:52px 6vw}.section-title{text-align:center;font-size:clamp(1.9rem,4vw,3rem);font-weight:1000;text-transform:uppercase;margin:0 0 8px}.section-title span{color:var(--orange)}.sub{text-align:center;color:#64564d;max-width:720px;margin:0 auto 30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:17px}.card{background:white;border:2px solid var(--black);padding:22px;border-radius:8px;box-shadow:5px 5px 0 var(--yellow)}.card h3{font-size:1.35rem;text-transform:uppercase;margin:0 0 8px;color:var(--orange)}.pill{display:inline-block;background:#f4eee4;border:1px solid #d8cabb;padding:4px 9px;border-radius:20px;font-size:.85rem;margin:3px 3px 0 0;font-weight:700}
-.banner{background:var(--orange);color:white;text-align:center;border-top:6px solid var(--black);border-bottom:6px solid var(--black)}.banner h2{font-size:clamp(2rem,4vw,3.3rem);text-transform:uppercase;margin:0 0 8px}.banner .btn{background:var(--black);box-shadow:4px 4px 0 var(--yellow)}
-.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.contact .card h3{color:var(--black)}.contact a{color:#b83216;font-weight:800}
-.note{font-size:.9rem;color:#76685d;margin-top:22px;text-align:center}
-footer{background:var(--black);color:white;text-align:center;padding:25px 6vw;border-top:6px solid var(--orange)}footer b{color:var(--yellow)}
-@media(max-width:600px){header{align-items:flex-start}nav{width:100%;display:flex;gap:12px;flex-wrap:wrap}nav a{margin:0}.hero{padding:55px 6vw}.btn{display:block;text-align:center;max-width:330px}}
+*{box-sizing:border-box}
+body{margin:0;background:#100817;color:white;font-family:Arial,sans-serif}
+header{text-align:center;padding:22px 12px;background:#1b0b25;border-bottom:2px solid #ff168b}
+.logo{font-size:32px;font-weight:900}
+.logo span,h2 span{color:#ff168b}
+nav{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:15px}
+nav a{color:white;text-decoration:none;font-weight:bold;font-size:14px}
+.hero{text-align:center;padding:65px 18px 55px;background:radial-gradient(ellipse at top,#62208b,#100817 70%)}
+.hero h1{font-size:clamp(38px,9vw,65px);line-height:1.1;margin:18px 0}
+.hero h1 span{color:#ff168b}
+.hero p{color:#ddd;max-width:500px;margin:20px auto}
+.btn{display:inline-block;margin:6px;padding:13px 18px;border-radius:8px;background:linear-gradient(100deg,#7200ff,#ff168b);color:white;text-decoration:none;font-weight:bold}
+section{padding:48px 18px;max-width:1050px;margin:auto}
+h2{text-align:center;font-size:32px}
+.intro{text-align:center;color:#d2c6d9}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px}
+.card{padding:22px;background:#251331;border:1px solid #59316c;border-radius:12px}
+.card .emoji{font-size:35px}
+.card h3{color:#ff69b9;margin-bottom:8px}
+.card p{color:#ded5e3}
+.promo{max-width:none;text-align:center;background:linear-gradient(120deg,#5100b5,#a90061);padding:40px 18px}
+.promo h2{margin-top:0}
+.price{font-size:52px;font-weight:900}
+.location{text-align:center;background:#21102b;border-radius:12px;padding:28px 15px}
+footer{text-align:center;padding:25px;color:#cfc3d5;border-top:1px solid #492653}
 </style>
 </head>
 <body>
 <header>
-  <div class="brand">Toto's <b>Taqueria</b></div>
-  <nav><a href="#menu">Menú</a><a href="#eventos">Taquizas</a><a href="#visitanos">Ubicación</a></nav>
+<div class="logo">TOTO'S <span>TAQUERIA</span></div>
+<nav>
+<a href="#inicio">INICIO</a>
+<a href="#menu">MENÚ</a>
+<a href="#promos">PROMOCIONES</a>
+<a href="#ubicacion">UBICACIÓN</a>
+</nav>
 </header>
+
 <main>
-<section class="hero">
-  <div class="kicker">Food Truck · San José, California</div>
-  <h1>Mucho sabor.<br><em>Cero aburrimiento.</em></h1>
-  <p>Tacos, quesabirrias, burritos y antojitos mexicanos preparados para satisfacer el antojo. También armamos taquizas para tus fiestas y reuniones.</p>
-  <a class="btn" href="https://maps.app.goo.gl/kH6fMZYSmJtFiXZp9?g_st=ic" target="_blank" rel="noopener">📍 Cómo llegar</a>
-  <a class="btn alt" href="tel:+16692551225">☎ Llamar para ordenar</a>
-</section>
+<div class="hero" id="inicio">
+<p>🔥 MEXICAN STREET FOOD 🔥</p>
+<h1>EL AUTÉNTICO<br><span>SABOR MEXICANO</span></h1>
+<p>Tacos, burritos, quesabirrias y mucho más. ¡Ven a disfrutar!</p>
+<a class="btn" href="tel:+16692551225">📞 LLAMAR</a>
+<a class="btn" href="#menu">🌮 VER MENÚ</a>
+</div>
+
 <section id="menu">
-  <h2 class="section-title">El <span>menú</span></h2>
-  <p class="sub">Los favoritos de Toto's Taqueria. Estamos preparando la lista final con los precios exactos de tu menú; por ahora no publicamos precios sin confirmarlos.</p>
-  <div class="grid">
-    <article class="card"><h3>🌮 Tacos</h3><p>Clásicos tacos con cebolla, cilantro y salsa.</p><span class="pill">Asada</span><span class="pill">Al pastor</span><span class="pill">Pollo</span><span class="pill">Suadero</span><span class="pill">Lengua</span><span class="pill">Y más</span></article>
-    <article class="card"><h3>🧀 Quesabirrias</h3><p>Birria de res, queso derretido y consomé para chopear.</p></article>
-    <article class="card"><h3>🌯 Burritos</h3><p>Opciones clásicas, California, birria y más variedades.</p></article>
-    <article class="card"><h3>🫓 Quesadillas</h3><p>Tortilla doradita con queso y tu carne favorita.</p></article>
-    <article class="card"><h3>🍟 Antojitos</h3><p>Asada fries, nachos, mulitas, sopes, flautas y huaraches.</p></article>
-    <article class="card"><h3>🍤 Mariscos</h3><p>Pregunta por tacos de camarón y otras opciones de mariscos disponibles.</p></article>
-  </div>
-  <p class="note">Menú y precios finales pendientes de confirmar con capturas de Google Maps.</p>
+<h2>NUESTRO <span>MENÚ</span></h2>
+<p class="intro">¡Preparamos tus antojos favoritos!</p>
+<div class="grid">
+<div class="card"><div class="emoji">🌮</div><h3>Tacos</h3><p>Carne asada y otros deliciosos sabores.</p></div>
+<div class="card"><div class="emoji">🌯</div><h3>Burritos</h3><p>Bien servidos y preparados al momento.</p></div>
+<div class="card"><div class="emoji">🧀</div><h3>Quesabirrias</h3><p>Carne, queso, tortillas doradas y consomé.</p></div>
+<div class="card"><div class="emoji">🫓</div><h3>Quesadillas</h3><p>Calientitas, con queso y tus ingredientes favoritos.</p></div>
+<div class="card"><div class="emoji">🍽️</div><h3>Antojitos</h3><p>Tortas, flautas, sopes y huaraches.</p></div>
+<div class="card"><div class="emoji">🍔</div><h3>Hamburguesas</h3><p>También tenemos hamburguesas y hot dogs.</p></div>
+</div>
 </section>
-<section id="eventos" class="banner">
-  <h2>Tu fiesta merece una taquiza</h2>
-  <p>Paquetes para cumpleaños, reuniones familiares y eventos. Pregunta por tacos, quesabirrias, carnes y acompañamientos.</p>
-  <a class="btn" href="tel:+16692551225">Cotiza tu evento</a>
-</section>
-<section id="visitanos">
-  <h2 class="section-title">Caile a <span>Toto's</span></h2>
-  <p class="sub">¡Te esperamos para quitarte el antojo!</p>
-  <div class="contact">
-    <div class="card"><h3>📍 Dirección</h3><p>1855 Tully Rd<br>San Jose, CA 95122</p><a href="https://maps.app.goo.gl/kH6fMZYSmJtFiXZp9?g_st=ic" target="_blank" rel="noopener">Abrir Google Maps →</a></div>
-    <div class="card"><h3>☎ Teléfono</h3><p>(669) 255-1225</p><a href="tel:+16692551225">Llamar ahora →</a></div>
-    <div class="card"><h3>🕒 Horarios</h3><p>Los horarios pueden cambiar. Revisa la ficha antes de visitarnos.</p><a href="https://maps.app.goo.gl/kH6fMZYSmJtFiXZp9?g_st=ic" target="_blank" rel="noopener">Ver en Google Maps →</a></div>
-  </div>
+
+<div class="promo" id="promos">
+<h2>¡PROMOCIÓN DE LA CASA!</h2>
+<div class="price">$15.99</div>
+<p>3 quesabirrias con consomé.</p>
+<a class="btn" href="tel:+16692551225">LLAMA PARA ORDENAR</a>
+</div>
+
+<section id="ubicacion">
+<div class="location">
+<h2>¡VEN A <span>VISITARNOS!</span></h2>
+<p>📍 1855 Tully Road, San José, California</p>
+<a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=1855+Tully+Rd+San+Jose+CA">ABRIR GOOGLE MAPS</a>
+<p>📞 (669) 255-1225</p>
+</div>
 </section>
 </main>
-<footer><b>Toto's Taqueria</b> · Sabor mexicano en San José, CA<br>¡Gracias por apoyar a tu taquería local!</footer>
+
+<footer>
+<strong>Toto's Taqueria</strong>
+<p>Mexican Street Food · San José, California</p>
+<p>© 2026 Toto's Taqueria</p>
+</footer>
 </body>
 </html>
