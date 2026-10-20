@@ -4,44 +4,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Toto's Taqueria inc.| San José</title>
-<meta name="description" content="Tacos, burritos y quesabirrias en San José, California.">
+<meta name="theme-color" content="#1b0b25">
+<title>Toto's Taqueria Inc. | San José</title>
+<meta name="description" content="Menú de Toto's Taqueria Inc. en San José, California. Tacos, burritos, quesabirrias, birria, mariscos y más. Pide por WhatsApp.">
+
 <style>
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{margin:0;background:#100817;color:white;font-family:Arial,sans-serif}
 header{text-align:center;padding:22px 12px;background:#1b0b25;border-bottom:2px solid #ff168b}
-.logo{font-size:32px;font-weight:900}
+.logo{font-size:30px;font-weight:900}
 .logo span,h2 span{color:#ff168b}
-nav{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:15px}
-nav a{color:white;text-decoration:none;font-weight:bold;font-size:14px}
-.hero{text-align:center;padding:65px 18px 55px;background:radial-gradient(ellipse at top,#62208b,#100817 70%)}
-.hero h1{font-size:clamp(38px,9vw,65px);line-height:1.1;margin:18px 0}
+nav{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:16px}
+nav a{color:white;text-decoration:none;font-weight:bold;font-size:13px}
+.hero{text-align:center;padding:60px 18px;background:radial-gradient(ellipse at top,#62208b,#100817 72%)}
+.hero h1{font-size:clamp(35px,8vw,62px);line-height:1.1;margin:18px 0}
 .hero h1 span{color:#ff168b}
-.hero p{color:#ddd;max-width:500px;margin:20px auto}
-.btn{display:inline-block;margin:6px;padding:13px 18px;border-radius:8px;background:linear-gradient(100deg,#7200ff,#ff168b);color:white;text-decoration:none;font-weight:bold}
-section{padding:48px 18px;max-width:1050px;margin:auto}
-h2{text-align:center;font-size:32px}
+.hero p{color:#e2d7e8;max-width:550px;margin:20px auto}
+.btn{display:inline-block;margin:6px;padding:14px 19px;border-radius:9px;background:linear-gradient(100deg,#7200ff,#ff168b);color:white;text-decoration:none;font-weight:bold}
+section{padding:38px 16px;max-width:1100px;margin:auto}
+h2{text-align:center;font-size:clamp(25px,5vw,34px)}
 .intro{text-align:center;color:#d2c6d9}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px}
-.card{padding:22px;background:#251331;border:1px solid #59316c;border-radius:12px}
-.card .emoji{font-size:35px}
-.card h3{color:#ff69b9;margin-bottom:8px}
-.card p{color:#ded5e3}
-.promo{max-width:none;text-align:center;background:linear-gradient(120deg,#5100b5,#a90061);padding:40px 18px}
+.category{margin:42px 0 14px;padding-bottom:12px;border-bottom:2px solid #ff168b;text-align:left}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px;margin-top:22px}
+.card{display:flex;flex-direction:column;padding:20px;background:#251331;border:1px solid #59316c;border-radius:13px}
+.card h3{color:#ff69b9;margin:0 0 10px;font-size:20px}
+.card p{color:#ded5e3;line-height:1.5;margin:0 0 14px}
+.card .cost{margin-top:auto;color:#fff;font-size:23px;font-weight:900}
+.promo{max-width:none;text-align:center;background:linear-gradient(120deg,#5100b5,#a90061);padding:42px 18px}
 .promo h2{margin-top:0}
 .price{font-size:52px;font-weight:900}
 .location{text-align:center;background:#21102b;border-radius:12px;padding:28px 15px}
 footer{text-align:center;padding:25px;color:#cfc3d5;border-top:1px solid #492653}
+.whatsapp{text-align:center;padding:25px 15px}
+.whatsapp a{display:inline-block;background:linear-gradient(135deg,#d946ef,#7c3aed);color:white;padding:16px 24px;border-radius:30px;font-size:18px;font-weight:bold;text-decoration:none}
+.note{text-align:center;color:#cfc3d5;font-size:13px;margin-top:24px}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.card{padding:18px}}
 </style>
 </head>
+
 <body>
 <header>
-<div class="logo">TOTO'S <span>TAQUERIA</span></div>
+<div class="logo">TOTO'S <span>TAQUERIA INC.</span></div>
 <nav>
 <a href="#inicio">INICIO</a>
 <a href="#menu">MENÚ</a>
 <a href="#promos">PROMOCIONES</a>
 <a href="#ubicacion">UBICACIÓN</a>
+<a href="#pedidos">PEDIDOS</a>
 </nav>
 </header>
 
@@ -49,55 +59,101 @@ footer{text-align:center;padding:25px;color:#cfc3d5;border-top:1px solid #492653
 <div class="hero" id="inicio">
 <p>🔥 MEXICAN STREET FOOD 🔥</p>
 <h1>EL AUTÉNTICO<br><span>SABOR MEXICANO</span></h1>
-<p>Tacos, burritos, quesabirrias y mucho más. ¡Ven a disfrutar!</p>
+<p>Tacos, burritos, quesabirrias, mariscos y mucho más. ¡Ven a disfrutar!</p>
 <a class="btn" href="tel:+16692551225">📞 LLAMAR</a>
 <a class="btn" href="#menu">🌮 VER MENÚ</a>
+<a class="btn" href="#pedidos">📲 PEDIR POR WHATSAPP</a>
 </div>
 
 <section id="menu">
-<h2>NUESTRO <span>MENÚ</span></h2>
-<p class="intro">¡Preparamos tus antojos favoritos!</p>
+<h2>NUESTRO <span>MENÚ COMPLETO</span></h2>
+<p class="intro">Toto's Taqueria Inc. — San José, California</p>
+
+<h2 class="category">🌮 TACOS Y ANTOJITOS</h2>
 <div class="grid">
-<div class="card"><div class="emoji">🌮</div><h3>Tacos</h3><p>Carne asada y otros deliciosos sabores.</p></div>
-<div class="card"><div class="emoji">🌯</div><h3>Burritos</h3><p>Bien servidos y preparados al momento.</p></div>
-<div class="card"><div class="emoji">🧀</div><h3>Quesabirrias</h3><p>Carne, queso, tortillas doradas y consomé.</p></div>
-<div class="card"><div class="emoji">🫓</div><h3>Quesadillas</h3><p>Calientitas, con queso y tus ingredientes favoritos.</p></div>
-<div class="card"><div class="emoji">🍽️</div><h3>Antojitos</h3><p>Tortas, flautas, sopes y huaraches.</p></div>
-<div class="card"><div class="emoji">🍔</div><h3>Hamburguesas</h3><p>También tenemos hamburguesas y hot dogs.</p></div>
+<div class="card"><h3>Tacos</h3><p>Asada, pastor, pollo, chorizo y otras carnes disponibles.</p><div class="cost">$3.25</div></div>
+<div class="card"><h3>Super Taco</h3><p>Carne, queso, frijoles, pico de gallo y aguacate.</p><div class="cost">$6.00</div></div>
+<div class="card"><h3>Gringa al Pastor</h3><p>Especialidad de pastor con queso.</p><div class="cost">$7.00</div></div>
+<div class="card"><h3>Mulitas</h3><p>Dos tortillas con carne y queso.</p><div class="cost">$4.50</div></div>
+<div class="card"><h3>3 Sopes</h3><p>Tres antojitos preparados con tortillas gruesas de maíz.</p><div class="cost">$15.00</div></div>
+<div class="card"><h3>Huaraches</h3><p>Antojito tradicional mexicano preparado con masa de maíz.</p><div class="cost">$17.00</div></div>
+<div class="card"><h3>Huarache</h3><p>Especialidad mexicana de masa de maíz.</p><div class="cost">$16.00</div></div>
+<div class="card"><h3>Flautas de Pollo</h3><p>Tortillas enrolladas y doradas con pollo.</p><div class="cost">$17.00</div></div>
+<div class="card"><h3>Pambazos</h3><p>Pan relleno de papa y chorizo, bañado en salsa.</p><div class="cost">$13.00</div></div>
+<div class="card"><h3>Quesadilla</h3><p>Carne, queso, cebolla y cilantro.</p><div class="cost">$12.50</div></div>
 </div>
+
+<h2 class="category">🌯 BURRITOS Y ESPECIALIDADES</h2>
+<div class="grid">
+<div class="card"><h3>Burritos</h3><p>Carne, arroz, frijoles, queso, crema y guacamole.</p><div class="cost">$14.00</div></div>
+<div class="card"><h3>Tortas</h3><p>Carne, tomate, lechuga, cebolla y jalapeños.</p><div class="cost">$14.00</div></div>
+<div class="card"><h3>Nachos</h3><p>Carne, frijoles, guacamole, crema y pico de gallo.</p><div class="cost">$17.00</div></div>
+<div class="card"><h3>Alambres</h3><p>Carne, pimientos, cebolla y tocino.</p><div class="cost">$17.00</div></div>
+<div class="card"><h3>Bistec Ranchero</h3><p>Especialidad de bistec estilo ranchero.</p><div class="cost">$18.00</div></div>
+<div class="card"><h3>Shell Tostada</h3><p>Tostada crujiente estilo mexicano.</p><div class="cost">$15.00</div></div>
+<div class="card"><h3>Asada Fries</h3><p>Papas fritas con carne asada y acompañamientos.</p><div class="cost">$17.00</div></div>
+</div>
+
+<h2 class="category">🧀 BIRRIA Y QUESABIRRIAS</h2>
+<div class="grid">
+<div class="card"><h3>Quesabirrias</h3><p>Birria con queso, tortillas doradas y consomé.</p><div class="cost">$16.00</div></div>
+<div class="card"><h3>Birria Plate with Rice and Beans</h3><p>Birria acompañada de arroz y frijoles.</p><div class="cost">$22.00</div></div>
+<div class="card"><h3>Birria</h3><p>Birria tradicional mexicana.</p><div class="cost">$22.00</div></div>
+<div class="card"><h3>Torta Birria</h3><p>Torta rellena de birria.</p><div class="cost">$16.00</div></div>
+<div class="card"><h3>Menudo</h3><p>Menudo tradicional mexicano.</p><div class="cost">$17.50</div></div>
+<div class="card"><h3>Ramen Birria</h3><p>Ramen preparado con birria y consomé.</p><div class="cost">$15.00</div></div>
+<div class="card"><h3>Flautas Birria (4 piezas)</h3><p>Cuatro flautas rellenas de birria.</p><div class="cost">$16.50</div></div>
+<div class="card"><h3>Quesadilla de Birria</h3><p>Quesadilla rellena de birria y queso.</p><div class="cost">$16.00</div></div>
+<div class="card"><h3>Nachos Birria</h3><p>Nachos preparados con birria.</p><div class="cost">$16.50</div></div>
+<div class="card"><h3>Burrito Birria</h3><p>Burrito preparado con birria.</p><div class="cost">$16.00</div></div>
+</div>
+
+<h2 class="category">🍤 MARISCOS / SEAFOOD</h2>
+<div class="grid">
+<div class="card"><h3>Burrito de Camarón</h3><p>Burrito preparado con camarones.</p><div class="cost">$15.00</div></div>
+<div class="card"><h3>Burrito de Pescado</h3><p>Burrito preparado con pescado.</p><div class="cost">$15.00</div></div>
+<div class="card"><h3>3 Tacos de Camarón</h3><p>Tres tacos de camarón.</p><div class="cost">$16.00</div></div>
+<div class="card"><h3>3 Tacos de Asada y Camarón</h3><p>Tres tacos de carne asada y camarón.</p><div class="cost">$16.00</div></div>
+<div class="card"><h3>Tacos de Pescado</h3><p>Tacos preparados con pescado.</p><div class="cost">$6.00</div></div>
+<div class="card"><h3>Plato de Camarón con Papas Fritas</h3><p>Camarones acompañados de papas fritas.</p><div class="cost">$16.00</div></div>
+<div class="card"><h3>Camarones a la Diabla</h3><p>Camarones preparados en salsa picante.</p><div class="cost">$18.00</div></div>
+<div class="card"><h3>3 Empanadas de Camarón</h3><p>Tres empanadas rellenas de camarón.</p><div class="cost">$16.00</div></div>
+<div class="card"><h3>Quesadillas de Maíz de Camarón</h3><p>Quesadillas de maíz preparadas con camarón.</p><div class="cost">$14.00</div></div>
+</div>
+
+<p class="note">Precios sujetos a cambios. Pregunta por disponibilidad y bebidas.</p>
 </section>
 
 <div class="promo" id="promos">
-<h2>¡PROMOCIÓN DE LA CASA!</h2>
+<h2>🔥 ¡PROMOCIÓN DE LA CASA! 🔥</h2>
 <div class="price">$15.99</div>
 <p>3 quesabirrias con consomé.</p>
-<a class="btn" href="tel:+16692551225">LLAMA PARA ORDENAR</a>
+<a class="btn" href="https://wa.me/16692551225?text=Hola%2C%20quiero%20pedir%20la%20promoci%C3%B3n%20de%203%20quesabirrias." target="_blank" rel="noopener noreferrer">PEDIR PROMOCIÓN</a>
 </div>
 
 <section id="ubicacion">
 <div class="location">
 <h2>¡VEN A <span>VISITARNOS!</span></h2>
 <p>📍 1855 Tully Road, San José, California</p>
-<a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=1855+Tully+Rd+San+Jose+CA">ABRIR GOOGLE MAPS</a>
+<a class="btn" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=1855+Tully+Rd+San+Jose+CA">📍 ABRIR GOOGLE MAPS</a>
 <p>📞 (669) 255-1225</p>
+<a class="btn" href="tel:+16692551225">LLAMAR AHORA</a>
 </div>
+</section>
+
+<section id="pedidos" class="whatsapp">
+<h2>📲 HAZ TU <span>PEDIDO</span></h2>
+<p>Ordena fácilmente por WhatsApp.</p>
+<a href="https://wa.me/16692551225?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Toto%E2%80%99s%20Taqueria."
+target="_blank" rel="noopener noreferrer">📲 PEDIR POR WHATSAPP</a>
 </section>
 </main>
 
 <footer>
-<strong>Toto's Taqueria</strong>
+<strong>Toto's Taqueria Inc.</strong>
 <p>Mexican Street Food · San José, California</p>
-<p>© 2026 Toto's Taqueria</p>
+<p>© 2026 Toto's Taqueria Inc.</p>
 </footer>
-
-<div style="text-align:center; margin:30px 0;">
-  <a href="https://wa.me/16692551225?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Toto%E2%80%99s%20Taqueria."
-     target="_blank"
-     rel="noopener noreferrer"
-     style="display:inline-block; background:linear-gradient(135deg,#d946ef,#7c3aed); color:white; padding:15px 24px; border-radius:30px; font-size:18px; font-weight:bold; text-decoration:none;">
-    📲 Pedir por WhatsApp
-  </a>
-</div>
 
 </body>
 </html>
